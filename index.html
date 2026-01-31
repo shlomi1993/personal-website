@@ -1,213 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shlomi Ben Shushan | AI & Software Engineer</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
-        
-        :root {
-            --bg: #050505;
-            --accent: #3b82f6;
-            --card: #0f0f0f;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shlomi Ben Shushan | Software & AI Engineer</title>
 
-        body { 
-            background-color: var(--bg); 
-            color: #e5e7eb; 
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            scroll-behavior: smooth;
-        }
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-        .mono { font-family: 'JetBrains Mono', monospace; }
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-        /* Professional Gradient Text */
-        .grad-text {
-            background: linear-gradient(135deg, #fff 0%, #6366f1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+  <!-- Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
-        /* High-End Card Effect */
-        .pro-card {
-            background: var(--card);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    :root {
+      --bg: #050505;
+      --accent: #3b82f6;
+      --card: #0f0f0f;
+    }
 
-        .pro-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-        }
+    body {
+      background-color: var(--bg);
+      color: #e5e7eb;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
 
-        /* Custom Image Container */
-        .profile-frame {
-            position: relative;
-            width: 100%;
-            max-width: 450px;
-        }
+    .mono { font-family: 'JetBrains Mono', monospace; }
 
-        .profile-frame::after {
-            content: '';
-            position: absolute;
-            inset: -1px;
-            background: linear-gradient(to bottom right, var(--accent), transparent);
-            z-index: -1;
-            border-radius: 1.5rem;
-        }
+    .grad-text {
+      background: linear-gradient(135deg, #ffffff 0%, #6366f1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-        /* Subtle Background Grid */
-        .grid-bg {
-            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
-            background-size: 40px 40px;
-        }
+    .pro-card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: all .35s ease;
+    }
 
-        #particles-js {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            pointer-events: none;
-        }
-    </style>
+    .pro-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,.4);
+    }
+
+    .grid-bg {
+      background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 0);
+      background-size: 40px 40px;
+    }
+
+    #particles-js {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
 </head>
+
 <body class="grid-bg">
 
-    <div id="particles-js"></div>
+<div id="particles-js"></div>
 
-    <nav class="fixed w-full z-50 top-0 py-6 px-10 flex justify-between items-center backdrop-blur-xl border-b border-white/5">
-        <div class="font-bold tracking-tighter text-xl">SHLOMI<span class="text-blue-500">.</span></div>
-        <div class="hidden md:flex gap-10 text-[11px] font-semibold uppercase tracking-widest text-gray-400">
-            <a href="#about" class="hover:text-white transition">Intro</a>
-            <a href="#experience" class="hover:text-white transition">Expertise</a>
-            <a href="#academic" class="hover:text-white transition">Education</a>
-            <a href="mailto:shlomiggl@gmail.com" class="text-white hover:text-blue-400 transition">Contact</a>
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 px-10 py-6 flex justify-between items-center backdrop-blur-xl border-b border-white/5">
+  <div class="font-extrabold tracking-tight text-xl">SHLOMI<span class="text-blue-500">.</span></div>
+  <div class="hidden md:flex gap-10 text-[11px] font-semibold uppercase tracking-widest text-gray-400">
+    <a href="#about" class="hover:text-white">Intro</a>
+    <a href="#experience" class="hover:text-white">Experience</a>
+    <a href="#education" class="hover:text-white">Education</a>
+    <a href="mailto:shlomiggl@gmail.com" class="text-white hover:text-blue-400">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="about" class="relative min-h-screen flex items-center px-6 md:px-24">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+
+    <div data-aos="fade-up">
+      <span class="mono text-blue-500 text-xs font-bold uppercase tracking-widest">Software Validation Engineer</span>
+      <h1 class="text-6xl md:text-8xl font-extrabold leading-tight my-6 grad-text">
+        Engineering<br/>AI Systems
+      </h1>
+      <p class="text-gray-400 text-lg leading-relaxed max-w-xl">
+        Software Validation Engineer at <strong>Hailo</strong>, specializing in AI runtime systems, GenAI integration and automation infrastructure. Holding a B.Sc. in Computer Science and currently pursuing an M.Sc. in Machine Learning & Big Data. Strong system-level mindset, hands-on engineering approach, and a background in cybersecurity and leadership.
+      </p>
+
+      <div class="flex gap-4 mt-10">
+        <a href="https://www.linkedin.com/in/shlomibs93" target="_blank" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-blue-500 hover:text-white transition">LinkedIn</a>
+        <a href="https://github.com/shlomi1993" target="_blank" class="border border-white/10 px-8 py-4 rounded-full font-bold hover:bg-white/5 transition">GitHub</a>
+      </div>
+    </div>
+
+    <!-- PROFILE IMAGE -->
+    <div data-aos="zoom-in" class="relative">
+      <img
+        src="https://media.licdn.com/dms/image/D4D03AQE-3_Rj_J_9vQ/profile-displayphoto-shrink_800_800/0/1701198516244"
+        alt="Shlomi Ben Shushan"
+        class="rounded-3xl w-full max-w-md mx-auto shadow-2xl grayscale hover:grayscale-0 transition duration-700"
+      />
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-32 px-6 md:px-24 max-w-7xl mx-auto">
+  <h2 class="text-4xl font-bold mb-16">Professional Experience</h2>
+
+  <div class="space-y-8">
+
+    <div class="pro-card p-10 rounded-3xl" data-aos="fade-up">
+      <div class="flex justify-between mb-6">
+        <div>
+          <h3 class="text-2xl font-bold">Hailo Technologies</h3>
+          <p class="text-xs uppercase tracking-widest text-gray-500">Software Validation Engineer</p>
         </div>
-    </nav>
+        <span class="mono text-blue-500">2023 — Present</span>
+      </div>
+      <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm">
+        <li>Design and maintain infrastructure for feature validation and CI systems</li>
+        <li>Develop internal tools and automation frameworks using Python and C++</li>
+        <li>Specialize in GenAI runtime integration and validation on edge-AI accelerators</li>
+      </ul>
+    </div>
 
-    <section id="about" class="relative min-h-screen flex flex-col justify-center px-6 md:px-24">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
-            <div data-aos="fade-up" data-aos-duration="1000">
-                <span class="mono text-blue-500 text-xs font-bold uppercase tracking-widest mb-4 block">Software Validation Engineer</span>
-                <h1 class="text-6xl md:text-8xl font-extrabold mb-6 leading-tight grad-text">
-                    Engineering <br> AI Runtime.
-                </h1>
-                <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-lg">
-                    [cite_start]Specializing in **GenAI integration** and automation frameworks at **Hailo**[cite: 6, 11]. [cite_start]Pursuing an **M.Sc. in Machine Learning** with a focus on Big Data and high-performance systems[cite: 7, 11].
-                </p>
-                <div class="flex gap-4">
-                    <a href="https://linkedin.com/in/shlomibs93" target="_blank" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-blue-500 hover:text-white transition-all">LinkedIn Profile</a>
-                    <a href="https://github.com/shlomi1993" target="_blank" class="border border-white/10 px-8 py-4 rounded-full font-bold hover:bg-white/5 transition-all">GitHub</a>
-                </div>
-            </div>
-            
-            <div class="profile-frame" data-aos="zoom-in" data-aos-duration="1200">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQE-3_Rj_J_9vQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701198516244?e=1743638400&v=beta&t=M8-9J9_f6S6_I6Z8G_5_I_8_I_9_I_0" 
-                     alt="Shlomi Ben Shushan" 
-                     class="rounded-[1.4rem] w-full grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl">
-            </div>
+    <div class="pro-card p-10 rounded-3xl" data-aos="fade-up">
+      <div class="flex justify-between mb-6">
+        <div>
+          <h3 class="text-2xl font-bold">TripleCyber</h3>
+          <p class="text-xs uppercase tracking-widest text-gray-500">Cyber Security Analyst (Part-Time)</p>
         </div>
-    </section>
+        <span class="mono text-blue-500">2019 — 2022</span>
+      </div>
+      <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm">
+        <li>Provided managed cybersecurity services for enterprise environments</li>
+        <li>Developed internal tools using JavaScript to streamline SOC workflows</li>
+        <li>Worked with SIEM platforms for real-time threat detection and response</li>
+      </ul>
+    </div>
 
-    <section id="experience" class="py-32 px-6 md:px-24 max-w-7xl mx-auto">
-        <div class="flex justify-between items-end mb-20">
-            <h2 class="text-4xl font-bold">Selected Experience</h2>
-            <span class="mono text-gray-600 text-sm">2012 — 2026</span>
+    <div class="pro-card p-10 rounded-3xl" data-aos="fade-up">
+      <div class="flex justify-between mb-6">
+        <div>
+          <h3 class="text-2xl font-bold">IDF Intelligence Corps</h3>
+          <p class="text-xs uppercase tracking-widest text-gray-500">SOC Team Lead (Captain)</p>
         </div>
+        <span class="mono text-blue-500">2012 — 2017</span>
+      </div>
+      <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm">
+        <li>Led and trained a 10-person SOC team in a high-security environment</li>
+        <li>Managed operational networks, security policies, and identity systems</li>
+        <li>Hands-on work with SIEM, DLP, HIPS, Firewalls, and Active Directory</li>
+      </ul>
+    </div>
 
-        <div class="grid gap-6">
-            <div class="pro-card p-10 rounded-3xl group" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row justify-between mb-8">
-                    <div>
-                        <h3 class="text-2xl font-bold group-hover:text-blue-400 transition">Hailo Technologies</h3>
-                        <p class="text-gray-500 font-semibold uppercase text-xs tracking-widest mt-1">Software Validation Engineer</p>
-                    </div>
-                    <span class="mono text-blue-500 text-sm">2023 — Present</span>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8 text-sm text-gray-400 leading-relaxed">
-                    [cite_start]<p>Building GenAI runtime validation solutions and automation infrastructure using **Python and C++**[cite: 6, 11].</p>
-                    [cite_start]<p>Designing infrastructure for continuous integration (CI) and feature validation systems[cite: 11, 12].</p>
-                    [cite_start]<p>Maintaining high-level validation standards for edge-AI processing units[cite: 6, 11].</p>
-                </div>
-            </div>
+  </div>
+</section>
 
-            <div class="pro-card p-10 rounded-3xl group" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row justify-between mb-8">
-                    <div>
-                        <h3 class="text-2xl font-bold group-hover:text-blue-400 transition">IDF Intelligence Corps</h3>
-                        <p class="text-gray-500 font-semibold uppercase text-xs tracking-widest mt-1">SOC Team Lead | Captain</p>
-                    </div>
-                    <span class="mono text-blue-500 text-sm">2014 — 2017</span>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8 text-sm text-gray-400 leading-relaxed">
-                    [cite_start]<p>Led **10 soldiers** and managed a Security Operational Center (SOC)[cite: 11].</p>
-                    [cite_start]<p>Drafted security policies and managed network identities via Active Directory[cite: 11].</p>
-                    [cite_start]<p>Protected operational networks using **SIEM, DLP, and Firewall** systems[cite: 11].</p>
-                </div>
-            </div>
+<!-- EDUCATION & SKILLS -->
+<section id="education" class="py-32 bg-[#080808]">
+  <div class="max-w-7xl mx-auto px-6 md:px-24 grid md:grid-cols-2 gap-20">
+
+    <div data-aos="fade-right">
+      <h2 class="text-4xl font-bold mb-10">Education</h2>
+      <div class="space-y-6">
+        <div class="border-l-2 border-blue-500 pl-6">
+          <h4 class="font-bold">M.Sc. Machine Learning & Big Data</h4>
+          <p class="text-sm text-gray-500">Open University of Israel · GPA 88.0 · 2024 — Present</p>
         </div>
-    </section>
-
-    <section id="academic" class="py-32 bg-[#080808]">
-        <div class="max-w-7xl mx-auto px-6 md:px-24">
-            <div class="grid md:grid-cols-2 gap-20">
-                <div data-aos="fade-right">
-                    <h2 class="text-4xl font-bold mb-10">Academic <br>Background</h2>
-                    <div class="space-y-8">
-                        <div class="border-l-2 border-blue-500 pl-6">
-                            <h4 class="font-bold text-lg">M.Sc. Machine Learning & Big Data</h4>
-                            <p class="text-sm text-gray-500">The Open University | [cite_start]GPA 88.0 [cite: 11]</p>
-                        </div>
-                        <div class="border-l-2 border-gray-800 pl-6">
-                            <h4 class="font-bold text-lg">B.Sc. Computer Science</h4>
-                            <p class="text-sm text-gray-500">Bar-Ilan University | [cite_start]GPA 82.5 [cite: 11]</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="fade-left">
-                    <h2 class="text-4xl font-bold mb-10">Tech Stack</h2>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full hover:bg-white hover:text-black transition">Python</span>
-                        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full hover:bg-white hover:text-black transition">C/C++</span>
-                        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full hover:bg-white hover:text-black transition">GenAI</span>
-                        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full hover:bg-white hover:text-black transition">Machine Learning</span>
-                        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full hover:bg-white hover:text-black transition">Jenkins/CI</span>
-                        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full hover:bg-white hover:text-black transition">Linux</span>
-                        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full hover:bg-white hover:text-black transition">Cybersecurity</span>
-                    </div>
-                </div>
-            </div>
+        <div class="border-l-2 border-gray-700 pl-6">
+          <h4 class="font-bold">B.Sc. Computer Science</h4>
+          <p class="text-sm text-gray-500">Bar-Ilan University · GPA 82.5 · 2019 — 2022</p>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <footer class="py-20 text-center border-t border-white/5">
-        <p class="mono text-[10px] text-gray-600 uppercase tracking-widest">© 2026 Shlomi Ben Shushan • Givatayim, Israel</p>
-    </footer>
+    <div data-aos="fade-left">
+      <h2 class="text-4xl font-bold mb-10">Tech Stack</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full">Python</span>
+        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full">C / C++</span>
+        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full">Machine Learning</span>
+        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full">GenAI</span>
+        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full">CI / Jenkins</span>
+        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full">Git</span>
+        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full">Linux</span>
+        <span class="mono text-xs border border-white/10 px-4 py-2 rounded-full">Cybersecurity</span>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true });
-        particlesJS('particles-js', {
-            "particles": {
-                "number": { "value": 40 },
-                "color": { "value": "#ffffff" },
-                "opacity": { "value": 0.1 },
-                "size": { "value": 1 },
-                "line_linked": { "enable": true, "distance": 200, "color": "#ffffff", "opacity": 0.05, "width": 1 },
-                "move": { "enable": true, "speed": 1 }
-            }
-        });
-    </script>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-16 text-center border-t border-white/5">
+  <p class="mono text-[10px] text-gray-600 uppercase tracking-widest">
+    © 2026 Shlomi Ben Shushan · Givatayim, Israel
+  </p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true });
+  particlesJS('particles-js', {
+    particles: {
+      number: { value: 40 },
+      color: { value: '#ffffff' },
+      opacity: { value: 0.08 },
+      size: { value: 1 },
+      line_linked: { enable: true, distance: 200, color: '#ffffff', opacity: 0.05 },
+      move: { enable: true, speed: 1 }
+    }
+  });
+</script>
+
 </body>
 </html>
